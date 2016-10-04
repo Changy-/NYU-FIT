@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/s001_band"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/miband" />
+
+    <ImageView
+        android:id="@+id/s002_band"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/s001_band"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/fitbit" />
+
+    <TextView
+        android:id="@+id/s001_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:textSize="20sp"
+        android:text="Mi Band" />
+    <TextView
+        android:id="@+id/s002_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:textSize="20sp"
+        android:layout_below="@id/s001_band"
+        android:text="Fitbit" />
+    <ImageView
+        android:id="@+id/s003_band"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/s002_band"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/jawbone" />
+    <TextView
+        android:id="@+id/s003_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/s002_band"
+        android:text="Jawbone" />
+
+    <ImageView
+        android:id="@+id/s004_band"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/s003_band"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/garmin" />
+    <TextView
+        android:id="@+id/s004_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/s003_band"
+        android:text="Garmin" />
+
+</RelativeLayout>

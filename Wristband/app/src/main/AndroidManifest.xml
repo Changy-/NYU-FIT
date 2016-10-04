@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nyu.can.wristband" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="21" />
+
+
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="NYU FIT"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DeviceScanActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".DeviceControlActivity"
+            android:screenOrientation="portrait" ></activity>
+        <activity android:name=".MibandDisplayActivity"
+            android:screenOrientation="portrait" ></activity>
+        <activity android:name=".StepAnalyzeActivity"
+            android:screenOrientation="portrait" ></activity>
+        <activity android:name=".SleeptimeAnalyzeActivity"
+            android:screenOrientation="portrait" ></activity>
+        <activity android:name=".UserInfoActivity"
+            android:screenOrientation="portrait" ></activity>
+        <activity android:name=".ChooseBandActivity"
+            android:screenOrientation="portrait" ></activity>
+        <activity android:name=".FitbitDisplayActivity"
+            android:screenOrientation="portrait" ></activity>
+        <activity android:name=".RankActivity"
+            android:screenOrientation="portrait" ></activity>
+        <service android:name=".BluetoothLeService" android:enabled="true"/>
+
+    </application>
+
+</manifest>
