@@ -1,5 +1,5 @@
 # NYU-FIT
-Hackthon
+Hack fitbit and mi band. Develop my own app which can read data from them
 
 I reversed Mi band and Fitbit Android App and got communication protocols.
 During the NYU Hackthon, 2 teamates and I developed this App which can connect to Mi band and Fitbit HR and get fitness imformation from bands.
